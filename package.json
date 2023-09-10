@@ -1,7 +1,7 @@
 {
-	"name": "sql.js",
-	"version": "1.8.0",
-	"description": "SQLite library with support for opening and writing databases, prepared statements, and more. This SQLite library is in pure javascript (compiled with emscripten).",
+	"name": "cloudflare-worker-sqlite-wasm",
+	"version": "0.0.1",
+	"description": "fork of sql.js for cloudflare workers",
 	"keywords": [
 		"sql",
 		"sqlite",
@@ -17,7 +17,7 @@
 		"asm.js"
 	],
 	"license": "MIT",
-	"main": "./dist/sql-wasm.js",
+	"main": "./dist/sql-cf-wasm.js",
 	"scripts": {
 		"build": "make",
 		"rebuild": "npm run clean && npm run build",
@@ -32,13 +32,13 @@
 		"test-wasm-debug": "node --unhandled-rejections=strict test/all.js wasm-debug",
 		"doc": "jsdoc -c .jsdoc.config.json"
 	},
-	"homepage": "http://github.com/sql-js/sql.js",
+	"homepage": "http://github.com/adrianlyjak/cloudflare-worker-sqlite-wasm",
 	"repository": {
 		"type": "git",
-		"url": "http://github.com/sql-js/sql.js.git"
+		"url": "http://github.com/adrianlyjak/cloudflare-worker-sqlite-wasm.git"
 	},
 	"bugs": {
-		"url": "https://github.com/sql-js/sql.js/issues"
+		"url": "https://github.com/adrianlyjak/cloudflare-worker-sqlite-wasm/issues"
 	},
 	"devDependencies": {
 		"clean-jsdoc-theme": "^3.3.4",
